@@ -1,18 +1,21 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, Mail } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import LanguageToggle from "./LanguageToggle";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { t } = useLanguage();
 
   const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Services", path: "/services" },
-    { name: "EMI Calculator", path: "/emi-calculator" },
-    { name: "Contact", path: "/contact" },
+    { name: t('nav.home'), path: "/" },
+    { name: t('nav.about'), path: "/about" },
+    { name: t('nav.services'), path: "/services" },
+    { name: t('nav.emi'), path: "/emi-calculator" },
+    { name: t('nav.contact'), path: "/contact" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -51,11 +54,12 @@ const Navbar = () => {
 
           {/* Contact Info & CTA */}
           <div className="hidden lg:flex items-center space-x-4">
+            <LanguageToggle />
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
               <Phone className="w-4 h-4 text-primary" />
-              <span>+91 96328 54855</span>
+              <span>9632854855</span>
             </div>
-            <Button asChild className="bg-gradient-to-r from-secondary to-secondary-light hover:opacity-90">
+            <Button asChild className="bg-gold hover:bg-gold/90 text-gold-foreground">
               <Link to="/contact">Get Started</Link>
             </Button>
           </div>

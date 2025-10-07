@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Leadership from "@/components/Leadership";
 import { Award, Target, Eye, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -126,6 +127,9 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      {/* Leadership */}
+      <Leadership />
 
       {/* Why Choose Us */}
       <section className="py-20 bg-gradient-to-br from-primary to-secondary text-primary-foreground">

@@ -137,6 +137,10 @@ All colors MUST be HSL.
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold tracking-tight;
   }
+  
+  .font-signature {
+    font-family: 'Brush Script MT', cursive;
+  }
 }
 
 @layer utilities {

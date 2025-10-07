@@ -6,8 +6,14 @@ import truckImage from "@/assets/truck-finance.jpg";
 import harvesterImage from "@/assets/harvester-finance.jpg";
 import carImage from "@/assets/car-finance.jpg";
 import insuranceImage from "@/assets/insurance-services.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
+import LazyImage from "./LazyImage";
 
 const Services = () => {
+  const { t } = useLanguage();
+  const { ref, isVisible } = useScrollReveal();
+  
   const services = [
     {
       icon: Truck,
@@ -44,14 +50,14 @@ const Services = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section ref={ref} className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Our <span className="text-gradient">Financial Solutions</span>
+            {t('services.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive finance and insurance services designed for the unique needs of Rohtas district
+            {t('services.subtitle')}
           </p>
         </div>
 
@@ -61,11 +67,13 @@ const Services = () => {
             return (
               <Card 
                 key={index} 
-                className="group overflow-hidden border-2 hover:border-primary/50 transition-all duration-300 hover-lift hover-glow"
-                style={{ animationDelay: `${index * 100}ms` }}
+                className={`group overflow-hidden border-2 hover:border-primary/50 transition-all duration-700 hover-lift hover-glow ${
+                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                }`}
+                style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <div className="relative h-48 overflow-hidden">
-                  <img 
+                  <LazyImage 
                     src={service.image} 
                     alt={service.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -95,7 +103,7 @@ const Services = () => {
 
                   <Button asChild className="w-full group/btn">
                     <Link to="/services" className="flex items-center justify-center">
-                      Learn More
+                      {t('services.learnMore')}
                       <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
                     </Link>
                   </Button>
@@ -108,7 +116,7 @@ const Services = () => {
         <div className="text-center mt-12">
           <Button asChild size="lg" variant="outline" className="border-2">
             <Link to="/emi-calculator">
-              Calculate Your EMI
+              {t('services.calculateEMI')}
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
           </Button>
