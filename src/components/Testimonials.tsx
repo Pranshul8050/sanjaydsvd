@@ -4,23 +4,26 @@ import { Star, Quote } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Rajesh Kumar",
-      role: "Truck Owner, Sasaram",
+      name: "Rajesh Kumar (राजेश कुमार)",
+      role: "Truck Owner, Sasaram (ट्रक मालिक, सासाराम)",
       content: "Sanjay Finance helped me get my second truck within 48 hours. The process was smooth, and their team understood my business needs perfectly.",
+      contentHindi: "संजय फाइनेंस ने मुझे 48 घंटे में मेरा दूसरा ट्रक दिलाया। प्रक्रिया सहज थी और उनकी टीम ने मेरी व्यावसायिक जरूरतों को पूरी तरह समझा।",
       rating: 5,
       avatar: "RK",
     },
     {
-      name: "Priya Sharma",
-      role: "Farmer, Rohtas",
+      name: "Priya Sharma (प्रिया शर्मा)",
+      role: "Farmer, Rohtas (किसान, रोहतास)",
       content: "The harvester loan came with flexible payment terms that match my crop cycles. Very understanding of farmer's challenges. Highly recommended!",
+      contentHindi: "हार्वेस्टर लोन लचीली भुगतान शर्तों के साथ आया जो मेरी फसल चक्र से मेल खाता है। किसान की चुनौतियों को बहुत अच्छे से समझा। अत्यधिक अनुशंसित!",
       rating: 5,
       avatar: "PS",
     },
     {
-      name: "Amit Singh",
-      role: "Small Business Owner",
+      name: "Amit Singh (अमित सिंह)",
+      role: "Small Business Owner (छोटे व्यवसाय मालिक)",
       content: "Got my car loan approved in record time with minimal documentation. The insurance bundling saved me a lot of hassle. Great local service!",
+      contentHindi: "न्यूनतम दस्तावेज़ीकरण के साथ रिकॉर्ड समय में मेरा कार लोन मंजूर हो गया। बीमा बंडलिंग ने मुझे बहुत परेशानी से बचाया। बेहतरीन स्थानीय सेवा!",
       rating: 5,
       avatar: "AS",
     },
@@ -56,11 +59,16 @@ const Testimonials = () => {
                   ))}
                 </div>
 
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  "{testimonial.content}"
-                </p>
+                <div className="space-y-3">
+                  <p className="text-muted-foreground leading-relaxed">
+                    "{testimonial.content}"
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed text-sm italic border-t pt-3">
+                    "{testimonial.contentHindi}"
+                  </p>
+                </div>
 
-                <div className="flex items-center space-x-3">
+                <div className="flex items-center space-x-3 mt-4">
                   <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-primary-foreground font-semibold shadow-md">
                     {testimonial.avatar}
                   </div>

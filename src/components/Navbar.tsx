@@ -28,7 +28,7 @@ const Navbar = () => {
             </div>
             <div className="hidden md:block">
               <h1 className="text-xl font-bold text-foreground">Sanjay Finance</h1>
-              <p className="text-xs text-muted-foreground">Fueling Rohtas's Progress</p>
+              <p className="text-xs text-muted-foreground">Your Partner in Financial Progress.</p>
             </div>
           </Link>
 
@@ -53,7 +53,7 @@ const Navbar = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
               <Phone className="w-4 h-4 text-primary" />
-              <span>+91 XXXX XXXXXX</span>
+              <span>+91 96328 54855</span>
             </div>
             <Button asChild className="bg-gradient-to-r from-secondary to-secondary-light hover:opacity-90">
               <Link to="/contact">Get Started</Link>
@@ -90,7 +90,7 @@ const Navbar = () => {
               <div className="pt-4 space-y-3 border-t border-border">
                 <div className="flex items-center space-x-2 px-4 text-sm text-muted-foreground">
                   <Phone className="w-4 h-4 text-primary" />
-                  <span>+91 XXXX XXXXXX</span>
+                  <span>+91 96328 54855</span>
                 </div>
                 <Button asChild className="w-full bg-gradient-to-r from-secondary to-secondary-light">
                   <Link to="/contact">Get Started</Link>

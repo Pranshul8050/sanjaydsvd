@@ -160,7 +160,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Phone</h4>
-                      <p className="text-sm text-muted-foreground">+91 XXXX XXXXXX</p>
+                      <p className="text-sm text-muted-foreground">+91 96328 54855</p>
                       <p className="text-xs text-muted-foreground mt-1">Mon-Sat, 9:00 AM - 6:00 PM</p>
                     </div>
                   </div>
@@ -208,7 +208,7 @@ const Contact = () => {
                         className="w-full bg-secondary hover:bg-secondary/90"
                       >
                         <a 
-                          href="https://wa.me/91XXXXXXXXXX?text=Hi, I'm interested in your financial services" 
+                          href="https://wa.me/919632854855?text=Hi, I'm interested in your financial services" 
                           target="_blank" 
                           rel="noopener noreferrer"
                         >

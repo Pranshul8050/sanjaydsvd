@@ -37,7 +37,7 @@ const CTA = () => {
               asChild 
               size="lg"
               variant="outline"
-              className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 font-semibold text-lg backdrop-blur-sm"
+              className="border-2 border-gold text-gold hover:bg-gold/20 font-semibold text-lg backdrop-blur-sm"
             >
               <Link to="/contact" className="flex items-center">
                 <Phone className="w-5 h-5 mr-2" />

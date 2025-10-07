@@ -31,7 +31,7 @@ const Hero = () => {
 
             {/* Heading */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight">
-              Fueling <span className="text-gradient-gold">Rohtas's</span> Progress
+              <span className="text-gradient-gold">Sanjay Finance</span> — Your Partner in Financial Progress.
             </h1>
 
             {/* Subheading */}
@@ -57,7 +57,7 @@ const Hero = () => {
                 asChild 
                 size="lg"
                 variant="outline"
-                className="border-2 border-primary-foreground/80 text-primary-foreground hover:bg-primary-foreground/10 font-semibold text-lg backdrop-blur-sm"
+                className="border-2 border-gold text-gold hover:bg-gold/20 font-semibold text-lg backdrop-blur-sm"
               >
                 <Link to="/contact" className="flex items-center">
                   <FileText className="w-5 h-5 mr-2" />
