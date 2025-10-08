@@ -44,8 +44,9 @@ const Services = () => {
       title: "Insurance Services",
       description: "Comprehensive Vehicle, Health, and Life insurance under one roof. Your one-stop insurance solution.",
       image: insuranceImage,
-      features: ["Vehicle Insurance", "Health Insurance", "Life Insurance"],
+      features: ["✨ Cheapest Premiums", "✅ 100% Claim Settlement", "🏢 Top Insurance Partners"],
       color: "from-gold/80 to-secondary",
+      badges: ["Cheapest", "100% Claim"],
     },
   ];
 
@@ -84,6 +85,16 @@ const Services = () => {
                       <Icon className="w-7 h-7 text-primary" />
                     </div>
                   </div>
+                  {service.title === "Insurance Services" && (
+                    <div className="absolute top-4 right-4 flex flex-col gap-2">
+                      <span className="px-3 py-1 bg-gold/90 backdrop-blur-sm text-gold-foreground text-xs font-bold rounded-full shadow-lg animate-pulse">
+                        Cheapest
+                      </span>
+                      <span className="px-3 py-1 bg-secondary/90 backdrop-blur-sm text-secondary-foreground text-xs font-bold rounded-full shadow-lg">
+                        100% Claim
+                      </span>
+                    </div>
+                  )}
                 </div>
 
                 <CardHeader>
