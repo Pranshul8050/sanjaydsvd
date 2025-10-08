@@ -35,33 +35,37 @@ const Navbar = () => {
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-2">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
-                  isActive(link.path)
-                    ? "bg-primary text-primary-foreground shadow-md"
-                    : "text-foreground hover:bg-muted hover:scale-105"
-                }`}
-              >
-                {link.name}
+          <div className="hidden md:flex items-center space-x-4">
+            <nav>
+              <ul className="flex space-x-6">
+                {navLinks.map((link) => (
+                  <li key={link.path}>
+                    <Link
+                      to={link.path}
+                      className={`hover:text-primary transition-colors ${
+                        location.pathname === link.path ? 'text-primary font-semibold' : ''
+                      }`}
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            <div className="flex items-center space-x-4 ml-6">
+              <a href="tel:+919555720326" className="flex items-center gap-2 text-sm">
+                <Phone className="w-4 h-4" />
+                +91 95557 20326
+              </a>
+              <a href="mailto:Sanjayfinancecompany@gmail.com" className="flex items-center gap-2 text-sm">
+                <Phone className="w-4 h-4" />
+                Sanjayfinancecompany@gmail.com
+              </a>
+              <LanguageToggle />
+              <Link to="/contact">
+                <Button>{t('nav.getStarted') || 'Get Started'}</Button>
               </Link>
-            ))}
-          </div>
-
-          {/* Contact Info & CTA */}
-          <div className="hidden lg:flex items-center space-x-3">
-            <LanguageToggle />
-            <div className="flex items-center space-x-2 text-sm font-medium text-foreground bg-muted px-3 py-2 rounded-lg">
-              <Phone className="w-4 h-4 text-primary" />
-              <span>9632854855</span>
             </div>
-            <Button asChild className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-primary-foreground shadow-md hover:shadow-lg transition-all">
-              <Link to="/contact">Get Started</Link>
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
