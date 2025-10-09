@@ -40,7 +40,7 @@ const About = () => {
               About <span className="text-gradient">Sanjay Finance</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Your trusted partner for motor finance and insurance solutions in Rohtas district since 2010
+              Your trusted partner for motor finance and insurance solutions in Rohtas district since 1992
             </p>
           </div>
         </div>
@@ -53,13 +53,16 @@ const About = () => {
             <h2 className="text-3xl font-bold text-foreground mb-8">Our Story</h2>
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
               <p>
-                Founded in 2010, Sanjay Finance Company has been a cornerstone of financial services in Rohtas district. What began as a small office in Takiya Bazar, Sasaram, has grown into a trusted name for motor finance and insurance solutions.
+                Founded in 1992, Sanjay Finance Company has been a cornerstone of financial services in Rohtas district for over three decades. What began as a small office in Takiya Bazar, Sasaram, has grown into a trusted name synonymous with reliable motor finance and comprehensive insurance solutions.
               </p>
               <p>
-                We understand the unique needs of our community – from farmers needing harvester financing with seasonal payment flexibility to truckers requiring quick commercial vehicle loans. Our deep local knowledge and commitment to personalized service set us apart.
+                With 35+ years of hands-on experience, we've developed an unmatched understanding of our community's financial landscape. From farmers needing harvester financing with seasonal payment flexibility to truckers requiring quick commercial vehicle loans, we've supported every sector with tailored solutions and transparent dealings.
               </p>
               <p>
-                Over the years, we've helped thousands of families and businesses achieve their goals, whether it's buying their first vehicle, expanding their fleet, or securing comprehensive insurance coverage. Our success is measured by the success of our customers.
+                Our success is built on trust, integrity, and results. Having facilitated over 3000+ loan approvals and served 2500+ satisfied customers, we take pride in enabling dreams—whether it's purchasing a first vehicle, expanding a transport fleet, or securing the cheapest insurance with guaranteed 100% claim settlement.
+              </p>
+              <p>
+                At Sanjay Finance, we don't just offer financial services; we build lasting relationships rooted in reliability, transparency, and customer-first values. Your financial success is our mission.
               </p>
             </div>
           </div>

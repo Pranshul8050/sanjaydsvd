@@ -20,7 +20,7 @@ const translations = {
     'nav.contact': 'Contact',
     
     // Hero
-    'hero.badge': 'Trusted Since 2010',
+    'hero.badge': 'Trusted Since 1992',
     'hero.title': 'Sanjay Finance',
     'hero.subtitle': '— Your Partner in Financial Progress.',
     'hero.description': 'Fast approvals, flexible plans, and expert guidance for Motor Finance & Insurance solutions tailored for farmers, truckers, and families.',
@@ -66,7 +66,7 @@ const translations = {
     'nav.contact': 'संपर्क करें',
     
     // Hero
-    'hero.badge': '2010 से विश्वसनीय',
+    'hero.badge': '1992 से विश्वसनीय',
     'hero.title': 'संजय फाइनेंस',
     'hero.subtitle': '— आपकी वित्तीय प्रगति में साथी।',
     'hero.description': 'किसानों, ट्रक मालिकों और परिवारों के लिए तेज स्वीकृति, लचीली योजनाएं और मोटर फाइनेंस और बीमा समाधानों के लिए विशेषज्ञ मार्गदर्शन।',

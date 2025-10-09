@@ -36,15 +36,15 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-1">
+          <div className="hidden lg:flex items-center space-x-2">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+                className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
                   isActive(link.path)
-                    ? "bg-primary text-primary-foreground"
-                    : "text-foreground hover:bg-muted"
+                    ? "bg-primary text-primary-foreground shadow-md"
+                    : "text-foreground hover:bg-primary/10 hover:text-primary"
                 }`}
               >
                 {link.name}
@@ -53,13 +53,13 @@ const Navbar = () => {
           </div>
 
           {/* Contact Info & CTA */}
-          <div className="hidden lg:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-3">
             <LanguageToggle />
-            <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+            <div className="flex items-center space-x-2 px-3 py-2 rounded-lg bg-muted/50 text-sm">
               <Phone className="w-4 h-4 text-primary" />
-              <span>9632854855</span>
+              <span className="font-medium">9632854855</span>
             </div>
-            <Button asChild className="bg-gold hover:bg-gold/90 text-gold-foreground">
+            <Button asChild className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 shadow-lg transition-all duration-300">
               <Link to="/contact">Get Started</Link>
             </Button>
           </div>
@@ -96,7 +96,8 @@ const Navbar = () => {
                   <Phone className="w-4 h-4 text-primary" />
                   <span>+91 96328 54855</span>
                 </div>
-                <Button asChild className="w-full bg-gradient-to-r from-secondary to-secondary-light">
+                <LanguageToggle />
+                <Button asChild className="w-full bg-gradient-to-r from-primary to-secondary">
                   <Link to="/contact">Get Started</Link>
                 </Button>
               </div>

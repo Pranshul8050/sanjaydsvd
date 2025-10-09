@@ -169,10 +169,10 @@ const Contact = () => {
                     <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
                       <Mail className="w-5 h-5 text-accent" />
                     </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-1">Email</h4>
-                      <p className="text-sm text-muted-foreground">info@sanjayfinance.com</p>
-                    </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Email</h4>
+                    <p className="text-sm text-muted-foreground">Sanjayfinancecompany@gmail.com</p>
+                  </div>
                   </div>
 
                   <div className="flex items-start space-x-4">

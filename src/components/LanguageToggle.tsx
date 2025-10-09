@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Languages } from "lucide-react";
+import { Globe } from "lucide-react";
 
 const LanguageToggle = () => {
   const { language, toggleLanguage } = useLanguage();
@@ -10,10 +10,10 @@ const LanguageToggle = () => {
       variant="outline"
       size="sm"
       onClick={toggleLanguage}
-      className="flex items-center gap-2"
+      className="flex items-center gap-2 hover:bg-primary hover:text-primary-foreground transition-all duration-300 border-2"
     >
-      <Languages className="w-4 h-4" />
-      <span className="font-medium">{language === 'en' ? 'हिं' : 'EN'}</span>
+      <Globe className="w-4 h-4" />
+      <span className="font-semibold text-sm">{language === 'en' ? 'हिन्दी' : 'English'}</span>
     </Button>
   );
 };
