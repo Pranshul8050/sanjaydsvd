@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -9,8 +9,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
 import { toast } from "sonner";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const formRef = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -18,12 +20,42 @@ const Contact = () => {
     enquiryType: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
-    toast.success("Thank you! We'll contact you within 24 hours.");
-    setFormData({ name: "", email: "", phone: "", enquiryType: "", message: "" });
+    
+    if (!formRef.current) return;
+
+    // Basic validation
+    if (!formData.name || !formData.email || !formData.phone || !formData.message) {
+      toast.error("Please fill in all required fields");
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      // Replace these with your actual EmailJS credentials
+      const SERVICE_ID = 'YOUR_SERVICE_ID';
+      const TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
+      const PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
+
+      await emailjs.sendForm(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        formRef.current,
+        PUBLIC_KEY
+      );
+
+      toast.success("✅ Your enquiry has been submitted successfully! Our team will contact you shortly.");
+      setFormData({ name: "", email: "", phone: "", enquiryType: "", message: "" });
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      toast.error("❌ Something went wrong. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (field: string, value: string) => {
@@ -59,27 +91,31 @@ const Contact = () => {
                 <CardDescription>Fill out the form below and we'll get back to you soon</CardDescription>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="name">Full Name *</Label>
                       <Input
                         id="name"
+                        name="name"
                         placeholder="Rajesh Kumar"
                         value={formData.name}
                         onChange={(e) => handleChange("name", e.target.value)}
                         required
+                        disabled={isSubmitting}
                       />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="phone">Phone Number *</Label>
                       <Input
                         id="phone"
+                        name="phone"
                         type="tel"
                         placeholder="+91 XXXXX XXXXX"
                         value={formData.phone}
                         onChange={(e) => handleChange("phone", e.target.value)}
                         required
+                        disabled={isSubmitting}
                       />
                     </div>
                   </div>
@@ -88,18 +124,24 @@ const Contact = () => {
                     <Label htmlFor="email">Email Address *</Label>
                     <Input
                       id="email"
+                      name="email"
                       type="email"
                       placeholder="rajesh@example.com"
                       value={formData.email}
                       onChange={(e) => handleChange("email", e.target.value)}
                       required
+                      disabled={isSubmitting}
                     />
                   </div>
 
                   <div className="space-y-2">
                     <Label htmlFor="enquiry-type">Enquiry Type *</Label>
-                    <Select value={formData.enquiryType} onValueChange={(value) => handleChange("enquiryType", value)}>
-                      <SelectTrigger id="enquiry-type">
+                    <Select 
+                      value={formData.enquiryType} 
+                      onValueChange={(value) => handleChange("enquiryType", value)}
+                      disabled={isSubmitting}
+                    >
+                      <SelectTrigger id="enquiry-type" name="enquiryType">
                         <SelectValue placeholder="Select enquiry type" />
                       </SelectTrigger>
                       <SelectContent>
@@ -112,22 +154,30 @@ const Contact = () => {
                         <SelectItem value="other">Other</SelectItem>
                       </SelectContent>
                     </Select>
+                    <input type="hidden" name="enquiry_type" value={formData.enquiryType} />
                   </div>
 
                   <div className="space-y-2">
                     <Label htmlFor="message">Message *</Label>
                     <Textarea
                       id="message"
+                      name="message"
                       placeholder="Tell us about your requirements..."
                       rows={5}
                       value={formData.message}
                       onChange={(e) => handleChange("message", e.target.value)}
                       required
+                      disabled={isSubmitting}
                     />
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full bg-gradient-to-r from-primary to-secondary">
-                    Submit Enquiry
+                  <Button 
+                    type="submit" 
+                    size="lg" 
+                    className="w-full bg-gradient-to-r from-primary to-secondary"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? "Sending..." : "Submit Enquiry"}
                   </Button>
                 </form>
               </CardContent>
