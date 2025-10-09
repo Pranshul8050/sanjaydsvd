@@ -25,21 +25,21 @@ const Stats = () => {
   const stats = [
     {
       icon: TrendingUp,
-      value: 3000,
+      value: 5000,
       suffix: "+",
       label: "Loans Approved",
       color: "text-secondary",
     },
     {
       icon: Users,
-      value: 2500,
+      value: 3500,
       suffix: "+",
       label: "Happy Customers",
       color: "text-primary",
     },
     {
       icon: Award,
-      value: 35,
+      value: 15,
       suffix: "+",
       label: "Years Experience",
       color: "text-accent",

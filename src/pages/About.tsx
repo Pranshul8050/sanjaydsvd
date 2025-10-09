@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Leadership from "@/components/Leadership";
-import { Award, Target, Eye, Users, TrendingUp } from "lucide-react";
+import { Award, Target, Eye, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const About = () => {
@@ -33,44 +33,35 @@ const About = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="py-20 bg-secondary/30">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-primary/10 to-secondary/10">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">About Sanjay Finance</h1>
-            <p className="text-xl text-muted-foreground mb-8">
-              Empowering dreams through trusted financial solutions since 1990
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+              About <span className="text-gradient">Sanjay Finance</span>
+            </h1>
+            <p className="text-xl text-muted-foreground leading-relaxed">
+              Your trusted partner for motor finance and insurance solutions in Rohtas district since 2010
             </p>
           </div>
         </div>
       </section>
 
       {/* Our Story */}
-      <section className="py-16 bg-background">
+      <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <Card className="p-8">
-              <div className="mb-6">
-                <h2 className="text-3xl font-bold">Our Story</h2>
-              </div>
-              <div className="space-y-6 text-muted-foreground leading-relaxed">
-                <p>
-                  Founded in 1990 by Shri Sanjay Kumar Gupta, Sanjay Finance has been a cornerstone 
-                  of financial empowerment in our community for over three decades. What started as a 
-                  small office with a vision to make vehicle financing accessible to everyone has grown 
-                  into a trusted name in the region.
-                </p>
-                <p>
-                  Over the years, we've helped thousands of families and businesses achieve their dreams 
-                  by providing tailored financial solutions. From farmers looking to purchase harvesters 
-                  to entrepreneurs expanding their fleets, we've been there every step of the way.
-                </p>
-                <p>
-                  Our journey has been marked by trust, transparency, and an unwavering commitment to 
-                  our clients' success. With over 3,000 loans approved and 2,500 happy customers, we're 
-                  proud to offer comprehensive financial and insurance services, always putting our clients' needs first.
-                </p>
-              </div>
-            </Card>
+            <h2 className="text-3xl font-bold text-foreground mb-8">Our Story</h2>
+            <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
+              <p>
+                Founded in 2010, Sanjay Finance Company has been a cornerstone of financial services in Rohtas district. What began as a small office in Takiya Bazar, Sasaram, has grown into a trusted name for motor finance and insurance solutions.
+              </p>
+              <p>
+                We understand the unique needs of our community – from farmers needing harvester financing with seasonal payment flexibility to truckers requiring quick commercial vehicle loans. Our deep local knowledge and commitment to personalized service set us apart.
+              </p>
+              <p>
+                Over the years, we've helped thousands of families and businesses achieve their goals, whether it's buying their first vehicle, expanding their fleet, or securing comprehensive insurance coverage. Our success is measured by the success of our customers.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -141,38 +132,23 @@ const About = () => {
       <Leadership />
 
       {/* Why Choose Us */}
-      <section className="py-16 bg-secondary/20">
+      <section className="py-20 bg-gradient-to-br from-primary to-secondary text-primary-foreground">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              {[
-                {
-                  title: "Competitive Rates",
-                  description: "We offer the most competitive interest rates in the market",
-                },
-                {
-                  title: "Quick Approval",
-                  description: "Fast processing and approval within 24-48 hours",
-                },
-                {
-                  title: "Expert Guidance",
-                  description: "Our experienced team provides personalized financial advice",
-                },
-                {
-                  title: "Trusted Service",
-                  description: "Over 35 years of reliable service and customer satisfaction",
-                },
-              ].map((item, index) => (
-                <Card key={index} className="p-6">
-                  <div className="mb-4">
-                    <h3 className="text-xl font-semibold">{item.title}</h3>
-                  </div>
-                  <div>
-                    <p className="text-muted-foreground">{item.description}</p>
-                  </div>
-                </Card>
-              ))}
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">Why Choose Us?</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div>
+                <div className="text-5xl font-bold text-gold mb-2">24hrs</div>
+                <p className="text-lg">Quick Approval Process</p>
+              </div>
+              <div>
+                <div className="text-5xl font-bold text-gold mb-2">15+</div>
+                <p className="text-lg">Years of Experience</p>
+              </div>
+              <div>
+                <div className="text-5xl font-bold text-gold mb-2">5000+</div>
+                <p className="text-lg">Satisfied Customers</p>
+              </div>
             </div>
           </div>
         </div>

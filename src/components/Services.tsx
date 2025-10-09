@@ -44,7 +44,7 @@ const Services = () => {
       title: "Insurance Services",
       description: "Comprehensive Vehicle, Health, and Life insurance under one roof. Your one-stop insurance solution.",
       image: insuranceImage,
-      features: ["✨ Cheapest Premiums", "✅ 100% Claim Settlement", "🏢 Top Insurance Partners"],
+      features: ["Vehicle Insurance", "Health Insurance", "Life Insurance"],
       color: "from-gold/80 to-secondary",
     },
   ];
