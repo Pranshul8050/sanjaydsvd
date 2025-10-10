@@ -6,7 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import Index from "./pages/Index";
 import About from "./pages/About";
-import ServicesPage from "./pages/ServicesPage";
+import Insurance from "./pages/Insurance";
+import Finance from "./pages/Finance";
 import EMICalculator from "./pages/EMICalculator";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -23,7 +24,8 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
-            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/insurance" element={<Insurance />} />
+            <Route path="/finance" element={<Finance />} />
             <Route path="/emi-calculator" element={<EMICalculator />} />
             <Route path="/contact" element={<Contact />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

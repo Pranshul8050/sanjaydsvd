@@ -13,7 +13,8 @@ const Navbar = () => {
   const navLinks = [
     { name: t('nav.home'), path: "/" },
     { name: t('nav.about'), path: "/about" },
-    { name: t('nav.services'), path: "/services" },
+    { name: "Insurance", path: "/insurance" },
+    { name: "Finance", path: "/finance" },
     { name: t('nav.emi'), path: "/emi-calculator" },
     { name: t('nav.contact'), path: "/contact" },
   ];
