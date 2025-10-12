@@ -34,10 +34,10 @@ const Testimonials = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            What Our <span className="text-gradient">Customers Say</span>
+            Customer Reviews: <span className="text-gradient">Real Success Stories</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Real stories from real people in the Rohtas community
+            Hear from satisfied customers about their experience with instant loan approvals, affordable EMI plans, and reliable insurance services
           </p>
         </div>
 

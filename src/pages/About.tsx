@@ -37,10 +37,10 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              About <span className="text-gradient">Sanjay Finance</span>
+              About <span className="text-gradient">Sanjay Finance Company</span> - Your Trusted Loan Partner
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Your trusted partner for motor finance and insurance solutions in Rohtas district since 1992
+              Leading provider of personal loans, business loans, vehicle finance, and insurance solutions in Rohtas district, Bihar since 1992
             </p>
           </div>
         </div>
@@ -50,7 +50,7 @@ const About = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-foreground mb-8">Our Story</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-8">Our Story - 35+ Years of Financial Excellence</h2>
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
               <p>
                 Founded in 1992, Sanjay Finance Company has been a cornerstone of financial services in Rohtas district for over three decades. What began as a small office in Takiya Bazar, Sasaram, has grown into a trusted name synonymous with reliable motor finance and comprehensive insurance solutions.

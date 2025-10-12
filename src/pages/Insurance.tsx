@@ -86,10 +86,10 @@ const Insurance = () => {
               <Shield className="w-10 h-10 text-primary-foreground" />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Insurance <span className="text-gradient">Services</span>
+              Comprehensive <span className="text-gradient">Insurance Services</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Comprehensive insurance solutions to protect what matters most to you
+              Vehicle, health, and life insurance solutions with instant approval, 100% claim settlement, and cheapest rates in India
             </p>
           </div>
         </div>
@@ -102,13 +102,13 @@ const Insurance = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
                 src={insuranceImage} 
-                alt="Insurance Services"
+                alt="Comprehensive insurance services - vehicle insurance, health insurance, life insurance with 100% claim settlement and cheapest rates"
                 className="w-full h-96 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end">
                 <div className="p-8 text-primary-foreground">
-                  <h2 className="text-3xl font-bold mb-2">Your Protection Partner</h2>
-                  <p className="text-lg">Expert guidance for all your insurance needs</p>
+                  <h2 className="text-3xl font-bold mb-2">Trusted Insurance Services Provider</h2>
+                  <p className="text-lg">Expert guidance for vehicle, health, and life insurance with 100% claim settlement</p>
                 </div>
               </div>
             </div>
@@ -129,7 +129,7 @@ const Insurance = () => {
                   <div className="relative h-64 w-full overflow-hidden">
                     <img 
                       src={insurance.image} 
-                      alt={insurance.title}
+                      alt={`${insurance.title} - Comprehensive ${insurance.title.toLowerCase()} coverage with instant approval, 100% claim settlement, and cheapest insurance rates`}
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end">
@@ -210,17 +210,17 @@ const Insurance = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Our <span className="text-gradient">Insurance Partners</span>
+                Our <span className="text-gradient">Insurance Partners</span> - Leading Providers
               </h2>
               <p className="text-lg text-muted-foreground">
-                We work with leading insurance providers across India
+                Trusted partnerships with top insurance companies in India for best rates and coverage
               </p>
             </div>
             
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <img 
                 src={insuranceBrands} 
-                alt="Insurance Company Partners"
+                alt="Leading insurance company partners in India - LIC, HDFC ERGO, ICICI Lombard, Bajaj Allianz, and more trusted insurance providers"
                 className="w-full h-auto object-contain bg-white p-8"
               />
             </div>

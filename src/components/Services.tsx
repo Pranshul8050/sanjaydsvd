@@ -54,10 +54,10 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            {t('services.title')}
+            Our <span className="text-gradient">Financial Services</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            {t('services.subtitle')}
+            Personal loans, business loans, vehicle finance, and insurance solutions with instant approval and affordable interest rates
           </p>
         </div>
 
@@ -75,7 +75,7 @@ const Services = () => {
                 <div className="relative h-48 overflow-hidden">
                   <LazyImage 
                     src={service.image} 
-                    alt={service.title}
+                    alt={`${service.title} - ${service.description} with instant loan approval and competitive interest rates`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className={`absolute inset-0 bg-gradient-to-t ${service.color} opacity-60`} />
@@ -112,8 +112,11 @@ const Services = () => {
                   </ul>
 
                   <Button asChild className="w-full group/btn">
-                    <Link to="/services" className="flex items-center justify-center">
-                      {t('services.learnMore')}
+                    <Link 
+                      to={service.title === "Insurance Services" ? "/insurance" : service.title.includes("Truck") || service.title.includes("Harvester") || service.title.includes("4-Wheeler") ? "/finance" : "/services"} 
+                      className="flex items-center justify-center"
+                    >
+                      Learn More
                       <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
                     </Link>
                   </Button>

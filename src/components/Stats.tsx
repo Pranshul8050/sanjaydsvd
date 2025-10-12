@@ -32,7 +32,7 @@ const Stats = () => {
     },
     {
       icon: Users,
-      value: 2000,
+      value: 3000,
       suffix: "+",
       label: "Happy Customers",
       color: "text-primary",
@@ -89,10 +89,10 @@ const Stats = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Our Impact in <span className="text-gradient">Numbers</span>
+            Trusted by Thousands: Our <span className="text-gradient">Success Story</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Building trust through transparent service and reliable financial solutions
+            Over 3000+ satisfied customers with instant loan approvals and 100% transparency in personal loans, business loans, and insurance services
           </p>
         </div>
 

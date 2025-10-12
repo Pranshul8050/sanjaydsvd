@@ -85,10 +85,10 @@ const Finance = () => {
               <Banknote className="w-10 h-10 text-primary-foreground" />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Finance <span className="text-gradient">Solutions</span>
+              Personal & Business Loan <span className="text-gradient">Finance Solutions</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Flexible financing options for all your vehicle needs
+              Instant approval on truck, harvester, and car loans with competitive interest rates and flexible EMI plans
             </p>
           </div>
         </div>
@@ -109,7 +109,7 @@ const Finance = () => {
                     <div className="relative rounded-2xl overflow-hidden shadow-xl hover-lift group">
                       <img 
                         src={service.image} 
-                        alt={service.title}
+                        alt={`${service.title} - ${service.description} with instant loan approval, competitive interest rates, and flexible EMI plans`}
                         className="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
@@ -183,17 +183,17 @@ const Finance = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Our <span className="text-gradient">Finance Partners</span>
+                Our <span className="text-gradient">Finance Partners</span> - Top Lenders
               </h2>
               <p className="text-lg text-muted-foreground">
-                We collaborate with top financial institutions across India
+                Collaborating with India's leading banks and financial institutions for best loan rates
               </p>
             </div>
             
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <img 
                 src={financeBrands} 
-                alt="Finance Company Partners"
+                alt="Top finance company partners in India - Bajaj Finance, Tata Capital, HDFC Bank, ICICI Bank, and other leading vehicle loan providers"
                 className="w-full h-auto object-contain bg-white p-8"
               />
             </div>
@@ -233,10 +233,10 @@ const Finance = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to Get Your Vehicle?
+              Apply for Instant Vehicle Finance Today
             </h2>
             <p className="text-xl mb-8 text-primary-foreground/90">
-              Contact us today for the best financing options
+              Get fast loan approvals with competitive interest rates and flexible EMI options
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-gold hover:bg-gold/90 text-gold-foreground font-semibold">

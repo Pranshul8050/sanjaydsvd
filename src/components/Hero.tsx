@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img 
           src={heroImage} 
-          alt="Financial Services" 
+          alt="Sanjay Finance Company - Trusted personal loan, business loan, vehicle finance and insurance services with instant approval and lowest interest rates in India" 
           className="w-full h-full object-cover"
         />
         <div 

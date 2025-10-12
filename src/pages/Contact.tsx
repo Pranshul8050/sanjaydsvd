@@ -70,10 +70,10 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Get in <span className="text-gradient">Touch</span>
+              Contact Sanjay Finance Company – <span className="text-gradient">Loan Experts</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Have questions? We're here to help you find the right financial solution
+              Get instant loan approval, EMI calculation assistance, and expert financial guidance. Contact us for personal loans, business loans, and insurance services
             </p>
           </div>
         </div>
@@ -86,8 +86,8 @@ const Contact = () => {
             {/* Contact Form */}
             <Card className="lg:col-span-2 shadow-xl border-2">
               <CardHeader>
-                <CardTitle className="text-2xl">Send us a Message</CardTitle>
-                <CardDescription>Fill out the form below and we'll get back to you soon</CardDescription>
+                <CardTitle className="text-2xl">Send us a Message for Loan Enquiry</CardTitle>
+                <CardDescription>Fill out the form below for instant personal loan, business loan, or insurance consultation</CardDescription>
               </CardHeader>
               <CardContent>
                 <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
@@ -275,8 +275,8 @@ const Contact = () => {
           <div className="mt-12 max-w-7xl mx-auto">
             <Card className="overflow-hidden shadow-xl border-2">
               <CardHeader>
-                <CardTitle className="text-2xl">Visit Our Office</CardTitle>
-                <CardDescription>Takiya Bazar, Sasaram, District Rohtas, Bihar 821113</CardDescription>
+                <CardTitle className="text-2xl">Visit Our Office - Sasaram, Bihar</CardTitle>
+                <CardDescription>Sanjay Finance Company - Personal loan, business loan, and insurance services at Takiya Bazar, Sasaram, District Rohtas, Bihar 821113</CardDescription>
               </CardHeader>
               <CardContent className="p-0">
                 <div className="w-full h-96 bg-muted flex items-center justify-center">
@@ -298,38 +298,38 @@ const Contact = () => {
           {/* FAQ Section */}
           <div className="mt-12 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-foreground text-center mb-8">
-              Frequently Asked <span className="text-gradient">Questions</span>
+              Frequently Asked <span className="text-gradient">Questions</span> About Loans & Insurance
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <Card>
                 <CardContent className="pt-6">
-                  <h3 className="font-semibold text-lg mb-2 text-foreground">What documents do I need?</h3>
+                  <h3 className="font-semibold text-lg mb-2 text-foreground">What documents are required for loan approval?</h3>
                   <p className="text-sm text-muted-foreground">
-                    Basic documents include ID proof, address proof, income proof, and relevant vehicle/property documents. Our team will guide you through the complete list.
+                    Basic documents for instant loan approval include ID proof, address proof, income proof (salary slip or ITR), and relevant vehicle/property documents. Our expert team will guide you through the complete documentation process for personal loans, business loans, and vehicle finance.
                   </p>
                 </CardContent>
               </Card>
               <Card>
                 <CardContent className="pt-6">
-                  <h3 className="font-semibold text-lg mb-2 text-foreground">How long does approval take?</h3>
+                  <h3 className="font-semibold text-lg mb-2 text-foreground">How long does instant loan approval take?</h3>
                   <p className="text-sm text-muted-foreground">
-                    Most applications are processed within 24 hours. For urgent cases, we offer same-day approvals subject to document verification.
+                    Most personal loan and business loan applications are approved within 24 hours with our fast-track process. For urgent cases, we offer same-day loan approvals subject to quick document verification, ensuring you get funds when you need them.
                   </p>
                 </CardContent>
               </Card>
               <Card>
                 <CardContent className="pt-6">
-                  <h3 className="font-semibold text-lg mb-2 text-foreground">Are there prepayment charges?</h3>
+                  <h3 className="font-semibold text-lg mb-2 text-foreground">Are there prepayment charges on loans?</h3>
                   <p className="text-sm text-muted-foreground">
-                    No! We offer zero prepayment charges on most of our loan products. You can pay off your loan early without any penalties.
+                    No! We offer zero prepayment charges on most of our personal loan, business loan, and vehicle finance products. You can pay off your loan early without any penalties, helping you save on total interest costs.
                   </p>
                 </CardContent>
               </Card>
               <Card>
                 <CardContent className="pt-6">
-                  <h3 className="font-semibold text-lg mb-2 text-foreground">Do you offer doorstep service?</h3>
+                  <h3 className="font-semibold text-lg mb-2 text-foreground">Do you offer doorstep loan service in Bihar?</h3>
                   <p className="text-sm text-muted-foreground">
-                    Yes, we provide doorstep service for document collection and verification within Rohtas district for your convenience.
+                    Yes, we provide convenient doorstep service for loan document collection and verification within Rohtas district and surrounding areas in Bihar. Our financial advisors will visit your location to make the loan application process hassle-free.
                   </p>
                 </CardContent>
               </Card>

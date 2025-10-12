@@ -55,10 +55,10 @@ const EMICalculator = () => {
               <Calculator className="w-8 h-8 text-primary-foreground" />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              EMI <span className="text-gradient">Calculator</span>
+              Free Online <span className="text-gradient">EMI Calculator</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Calculate your monthly installments and plan your finances better
+              Calculate personal loan, business loan, and vehicle finance EMIs instantly with our smart calculator
             </p>
           </div>
         </div>
@@ -71,7 +71,7 @@ const EMICalculator = () => {
             {/* Calculator Inputs */}
             <Card className="lg:col-span-3 shadow-xl border-2">
               <CardHeader>
-                <CardTitle className="text-2xl">Calculate Your EMI</CardTitle>
+                <CardTitle className="text-2xl">Calculate Your Loan EMI - Personal, Business & Vehicle Loans</CardTitle>
                 <CardDescription>Adjust the values to see your monthly payment</CardDescription>
               </CardHeader>
               <CardContent className="space-y-8">
@@ -202,7 +202,7 @@ const EMICalculator = () => {
           <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto mt-12">
             <Card>
               <CardContent className="pt-6">
-                <h3 className="font-semibold text-lg mb-2 text-foreground">What is EMI?</h3>
+                <h3 className="font-semibold text-lg mb-2 text-foreground">What is EMI? Understanding Equated Monthly Installments</h3>
                 <p className="text-sm text-muted-foreground">
                   EMI (Equated Monthly Installment) is the fixed amount you pay every month to repay your loan, including principal and interest.
                 </p>
@@ -210,7 +210,7 @@ const EMICalculator = () => {
             </Card>
             <Card>
               <CardContent className="pt-6">
-                <h3 className="font-semibold text-lg mb-2 text-foreground">How is it calculated?</h3>
+                <h3 className="font-semibold text-lg mb-2 text-foreground">How is EMI Calculated? Loan Calculator Formula</h3>
                 <p className="text-sm text-muted-foreground">
                   EMI is calculated using the loan amount, interest rate, and tenure. The formula ensures equal monthly payments throughout the loan period.
                 </p>
@@ -218,7 +218,7 @@ const EMICalculator = () => {
             </Card>
             <Card>
               <CardContent className="pt-6">
-                <h3 className="font-semibold text-lg mb-2 text-foreground">Flexible Options</h3>
+                <h3 className="font-semibold text-lg mb-2 text-foreground">Flexible Loan Options with Affordable Interest Rates</h3>
                 <p className="text-sm text-muted-foreground">
                   We offer flexible tenure options and competitive interest rates to help you manage your finances better. Contact us for personalized plans.
                 </p>
