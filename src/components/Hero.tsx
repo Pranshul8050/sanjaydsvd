@@ -72,30 +72,30 @@ const Hero = () => {
             {/* Trust Indicators */}
             <div className="flex flex-wrap gap-8 pt-8">
               <div className="flex items-center space-x-2">
-                <div className="w-12 h-12 rounded-full bg-gold/20 backdrop-blur-sm flex items-center justify-center">
-                  <span className="text-2xl font-bold text-gold">✓</span>
+                <div className="w-12 h-12 rounded-full bg-gold/30 backdrop-blur-md border border-gold/50 flex items-center justify-center shadow-lg">
+                  <span className="text-2xl font-bold text-gold drop-shadow-lg">✓</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-primary-foreground">{t('hero.trust.approval')}</p>
-                  <p className="text-sm text-primary-foreground/70">{t('hero.trust.approval.desc')}</p>
+                  <p className="font-semibold text-white drop-shadow-md">{t('hero.trust.approval')}</p>
+                  <p className="text-sm text-white/95 drop-shadow-md">{t('hero.trust.approval.desc')}</p>
                 </div>
               </div>
               <div className="flex items-center space-x-2">
-                <div className="w-12 h-12 rounded-full bg-gold/20 backdrop-blur-sm flex items-center justify-center">
-                  <span className="text-2xl font-bold text-gold">✓</span>
+                <div className="w-12 h-12 rounded-full bg-gold/30 backdrop-blur-md border border-gold/50 flex items-center justify-center shadow-lg">
+                  <span className="text-2xl font-bold text-gold drop-shadow-lg">✓</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-primary-foreground">{t('hero.trust.flexible')}</p>
-                  <p className="text-sm text-primary-foreground/70">{t('hero.trust.flexible.desc')}</p>
+                  <p className="font-semibold text-white drop-shadow-md">{t('hero.trust.flexible')}</p>
+                  <p className="text-sm text-white/95 drop-shadow-md">{t('hero.trust.flexible.desc')}</p>
                 </div>
               </div>
               <div className="flex items-center space-x-2">
-                <div className="w-12 h-12 rounded-full bg-gold/20 backdrop-blur-sm flex items-center justify-center">
-                  <span className="text-2xl font-bold text-gold">✓</span>
+                <div className="w-12 h-12 rounded-full bg-gold/30 backdrop-blur-md border border-gold/50 flex items-center justify-center shadow-lg">
+                  <span className="text-2xl font-bold text-gold drop-shadow-lg">✓</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-primary-foreground">{t('hero.trust.local')}</p>
-                  <p className="text-sm text-primary-foreground/70">{t('hero.trust.local.desc')}</p>
+                  <p className="font-semibold text-white drop-shadow-md">{t('hero.trust.local')}</p>
+                  <p className="text-sm text-white/95 drop-shadow-md">{t('hero.trust.local.desc')}</p>
                 </div>
               </div>
             </div>
