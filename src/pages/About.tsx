@@ -145,11 +145,11 @@ const About = () => {
                 <p className="text-lg">Quick Approval Process</p>
               </div>
               <div>
-                <div className="text-5xl font-bold text-gold mb-2">15+</div>
+                <div className="text-5xl font-bold text-gold mb-2">35+</div>
                 <p className="text-lg">Years of Experience</p>
               </div>
               <div>
-                <div className="text-5xl font-bold text-gold mb-2">5000+</div>
+                <div className="text-5xl font-bold text-gold mb-2">3000+</div>
                 <p className="text-lg">Satisfied Customers</p>
               </div>
             </div>
