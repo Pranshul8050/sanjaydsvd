@@ -59,7 +59,7 @@ const About = () => {
                 With 35+ years of hands-on experience, we've developed an unmatched understanding of our community's financial landscape. From farmers needing harvester financing with seasonal payment flexibility to truckers requiring quick commercial vehicle loans, we've supported every sector with tailored solutions and transparent dealings.
               </p>
               <p>
-                Our success is built on trust, integrity, and results. Having facilitated over 3000+ loan approvals and served 2500+ satisfied customers, we take pride in enabling dreams—whether it's purchasing a first vehicle, expanding a transport fleet, or securing the cheapest insurance with guaranteed 100% claim settlement.
+                Our success is built on trust, integrity, and results. Having facilitated over 3500+ loan approvals and served 2500+ satisfied customers, we take pride in enabling dreams—whether it's purchasing a first vehicle, expanding a transport fleet, or securing the cheapest insurance with guaranteed 100% claim settlement.
               </p>
               <p>
                 At Sanjay Finance, we don't just offer financial services; we build lasting relationships rooted in reliability, transparency, and customer-first values. Your financial success is our mission.

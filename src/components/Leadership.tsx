@@ -4,17 +4,17 @@ import { Quote } from "lucide-react";
 const Leadership = () => {
   const leaders = [
     {
-      name: "Mr. Sanjay Kumar",
+      name: "Mr. Sanjay Kumar Singh",
       role: "Director",
       message: "At Sanjay Finance, we believe in empowering our community through accessible and transparent financial services. Our commitment is to be more than just a finance company – we are your partners in progress, dedicated to understanding your unique needs and providing solutions that truly make a difference in your life and business.",
       messageHindi: "संजय फाइनेंस में, हम सुलभ और पारदर्शी वित्तीय सेवाओं के माध्यम से अपने समुदाय को सशक्त बनाने में विश्वास करते हैं। हमारी प्रतिबद्धता केवल एक वित्त कंपनी से अधिक होने की है - हम प्रगति में आपके साथी हैं, आपकी अनूठी जरूरतों को समझने और ऐसे समाधान प्रदान करने के लिए समर्पित हैं जो वास्तव में आपके जीवन और व्यवसाय में अंतर लाते हैं।",
       initials: "SK",
     },
     {
-      name: "Mr. Rahul Sharma",
+      name: "Mr. Ravi Kumar Rahul",
       role: "Manager",
-      message: "With over 15 years of experience in the financial sector, our team at Sanjay Finance is dedicated to providing quick, reliable, and customer-centric services. We take pride in our local expertise and understanding of the agricultural and transport sectors, ensuring that every client receives personalized attention and the best possible financial solutions.",
-      messageHindi: "वित्तीय क्षेत्र में 15 से अधिक वर्षों के अनुभव के साथ, संजय फाइनेंस की हमारी टीम त्वरित, विश्वसनीय और ग्राहक-केंद्रित सेवाएं प्रदान करने के लिए समर्पित है। हम अपनी स्थानीय विशेषज्ञता और कृषि तथा परिवहन क्षेत्रों की समझ पर गर्व करते हैं, यह सुनिश्चित करते हुए कि प्रत्येक ग्राहक को व्यक्तिगत ध्यान और सर्वोत्तम संभव वित्तीय समाधान मिले।",
+      message: "With over 5 years of experience in the financial sector, our team at Sanjay Finance is dedicated to providing quick, reliable, and customer-centric services. We take pride in our local expertise and understanding of the agricultural and transport sectors, ensuring that every client receives personalized attention and the best possible financial solutions.",
+      messageHindi: "वित्तीय क्षेत्र में 5 से अधिक वर्षों के अनुभव के साथ, संजय फाइनेंस की हमारी टीम त्वरित, विश्वसनीय और ग्राहक-केंद्रित सेवाएं प्रदान करने के लिए समर्पित है। हम अपनी स्थानीय विशेषज्ञता और कृषि तथा परिवहन क्षेत्रों की समझ पर गर्व करते हैं, यह सुनिश्चित करते हुए कि प्रत्येक ग्राहक को व्यक्तिगत ध्यान और सर्वोत्तम संभव वित्तीय समाधान मिले।",
       initials: "RS",
     },
   ];

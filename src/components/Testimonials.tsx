@@ -12,7 +12,7 @@ const Testimonials = () => {
       avatar: "RK",
     },
     {
-      name: "Priya Sharma",
+      name: "Husain",
       role: "Farmer, Rohtas",
       content: "The harvester loan came with flexible payment terms that match my crop cycles. Very understanding of farmer's challenges. Highly recommended!",
       contentHindi: "हार्वेस्टर लोन लचीली भुगतान शर्तों के साथ आया जो मेरी फसल चक्र से मेल खाता है। किसान की चुनौतियों को बहुत अच्छे से समझा। अत्यधिक अनुशंसित!",
