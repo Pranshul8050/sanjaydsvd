@@ -17,13 +17,13 @@ const TrustBadges = () => {
     },
     {
       icon: Clock,
-      title: "15+ Years",
+      title: "35+ Years",
       description: "Industry Experience",
       color: "from-accent/20 to-accent/5",
     },
     {
       icon: Users,
-      title: "5000+",
+      title: "3000+",
       description: "Happy Customers",
       color: "from-gold/20 to-gold/5",
     },
