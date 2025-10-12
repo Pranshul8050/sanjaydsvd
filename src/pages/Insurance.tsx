@@ -6,6 +6,9 @@ import { Shield, CheckCircle, ArrowRight, Heart, Car, Users } from "lucide-react
 import { Link } from "react-router-dom";
 import insuranceImage from "@/assets/insurance-services.jpg";
 import insuranceBrands from "@/assets/insurance-brands.jpg";
+import vehicleInsuranceImg from "@/assets/vehicle-insurance.jpg";
+import healthInsuranceImg from "@/assets/health-insurance.jpg";
+import lifeInsuranceImg from "@/assets/life-insurance.jpg";
 
 const Insurance = () => {
   const insuranceTypes = [
@@ -13,6 +16,7 @@ const Insurance = () => {
       icon: Car,
       title: "Vehicle Insurance",
       description: "Comprehensive coverage for your vehicles",
+      image: vehicleInsuranceImg,
       features: [
         "Comprehensive & Third-party coverage",
         "Own damage protection",
@@ -32,6 +36,7 @@ const Insurance = () => {
       icon: Heart,
       title: "Health Insurance",
       description: "Protect yourself and your family's health",
+      image: healthInsuranceImg,
       features: [
         "Individual & Family floater plans",
         "Cashless hospitalization",
@@ -51,6 +56,7 @@ const Insurance = () => {
       icon: Users,
       title: "Life Insurance",
       description: "Secure your family's future",
+      image: lifeInsuranceImg,
       features: [
         "Term insurance plans",
         "Investment-linked plans",
@@ -118,19 +124,29 @@ const Insurance = () => {
               const Icon = insurance.icon;
               
               return (
-                <Card key={index} className="border-2 shadow-lg hover-lift">
-                  <CardHeader>
-                    <div className="flex items-center gap-4 mb-2">
-                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center">
-                        <Icon className="w-7 h-7 text-primary" />
-                      </div>
-                      <div>
-                        <CardTitle className="text-2xl">{insurance.title}</CardTitle>
-                        <CardDescription className="text-base">{insurance.description}</CardDescription>
+                <Card key={index} className="border-2 shadow-lg hover-lift overflow-hidden">
+                  {/* Insurance Image */}
+                  <div className="relative h-64 w-full overflow-hidden">
+                    <img 
+                      src={insurance.image} 
+                      alt={insurance.title}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end">
+                      <div className="p-6 text-primary-foreground w-full">
+                        <div className="flex items-center gap-4">
+                          <div className="w-14 h-14 rounded-xl bg-primary-foreground/20 backdrop-blur-sm flex items-center justify-center">
+                            <Icon className="w-7 h-7 text-primary-foreground" />
+                          </div>
+                          <div>
+                            <CardTitle className="text-2xl text-primary-foreground">{insurance.title}</CardTitle>
+                            <CardDescription className="text-base text-primary-foreground/90">{insurance.description}</CardDescription>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </CardHeader>
-                  <CardContent className="grid md:grid-cols-2 gap-8">
+                  </div>
+                  <CardContent className="grid md:grid-cols-2 gap-8 pt-6">
                     {/* Features */}
                     <div>
                       <h4 className="font-semibold text-lg mb-3 text-foreground">Coverage Features</h4>

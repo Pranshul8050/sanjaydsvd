@@ -32,15 +32,15 @@ const Hero = () => {
               <span className="text-sm font-medium text-gold-foreground">{t('hero.badge')}</span>
             </div>
 
-            {/* Heading */}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight">
-              <span className="text-gradient-gold">{t('hero.title')}</span> {t('hero.subtitle')}
-            </h1>
-
-            {/* Subheading */}
-            <p className="text-xl md:text-2xl text-primary-foreground/90 leading-relaxed">
-              {t('hero.description')}
-            </p>
+            {/* Heading and Tagline in Border */}
+            <div className="border-2 border-gold/40 rounded-2xl p-6 md:p-8 bg-primary-foreground/5 backdrop-blur-sm">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-4">
+                <span className="text-gradient-gold">{t('hero.title')}</span> {t('hero.subtitle')}
+              </h1>
+              <p className="text-xl md:text-2xl text-primary-foreground/90 leading-relaxed">
+                {t('hero.description')}
+              </p>
+            </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
