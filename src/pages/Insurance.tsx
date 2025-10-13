@@ -119,63 +119,65 @@ const Insurance = () => {
       {/* Insurance Types */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto space-y-12">
-            {insuranceTypes.map((insurance, index) => {
-              const Icon = insurance.icon;
-              
-              return (
-                <Card key={index} className="border-2 shadow-lg hover-lift overflow-hidden">
-                  {/* Insurance Image */}
-                  <div className="relative h-64 w-full overflow-hidden">
-                    <img 
-                      src={insurance.image} 
-                      alt={`${insurance.title} - Comprehensive ${insurance.title.toLowerCase()} coverage with instant approval, 100% claim settlement, and cheapest insurance rates`}
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end">
-                      <div className="p-6 text-primary-foreground w-full">
-                        <div className="flex items-center gap-4">
-                          <div className="w-14 h-14 rounded-xl bg-primary-foreground/20 backdrop-blur-sm flex items-center justify-center">
-                            <Icon className="w-7 h-7 text-primary-foreground" />
-                          </div>
-                          <div>
-                            <CardTitle className="text-2xl text-primary-foreground">{insurance.title}</CardTitle>
-                            <CardDescription className="text-base text-primary-foreground/90">{insurance.description}</CardDescription>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              {insuranceTypes.map((insurance, index) => {
+                const Icon = insurance.icon;
+                
+                return (
+                  <Card key={index} className="border-2 shadow-lg hover-lift overflow-hidden flex flex-col">
+                    {/* Insurance Image */}
+                    <div className="relative h-56 w-full overflow-hidden">
+                      <img 
+                        src={insurance.image} 
+                        alt={`${insurance.title} - Comprehensive ${insurance.title.toLowerCase()} coverage with instant approval, 100% claim settlement, and cheapest insurance rates`}
+                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex items-end">
+                        <div className="p-5 text-primary-foreground w-full">
+                          <div className="flex flex-col items-center text-center gap-3">
+                            <div className="w-12 h-12 rounded-xl bg-primary-foreground/20 backdrop-blur-sm flex items-center justify-center">
+                              <Icon className="w-6 h-6 text-primary-foreground" />
+                            </div>
+                            <div>
+                              <h3 className="text-xl font-bold text-primary-foreground">{insurance.title}</h3>
+                              <p className="text-sm text-primary-foreground/90">{insurance.description}</p>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <CardContent className="grid md:grid-cols-2 gap-8 pt-6">
-                    {/* Features */}
-                    <div>
-                      <h4 className="font-semibold text-lg mb-3 text-foreground">Coverage Features</h4>
-                      <ul className="space-y-2">
-                        {insurance.features.map((feature, i) => (
-                          <li key={i} className="flex items-start text-sm text-muted-foreground">
-                            <CheckCircle className="w-4 h-4 text-secondary mr-2 mt-0.5 flex-shrink-0" />
-                            <span>{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                    <CardContent className="flex-1 pt-6 space-y-6">
+                      {/* Features */}
+                      <div>
+                        <h4 className="font-semibold text-base mb-3 text-foreground">Coverage Features</h4>
+                        <ul className="space-y-2">
+                          {insurance.features.map((feature, i) => (
+                            <li key={i} className="flex items-start text-xs text-muted-foreground">
+                              <CheckCircle className="w-3.5 h-3.5 text-secondary mr-2 mt-0.5 flex-shrink-0" />
+                              <span>{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
 
-                    {/* Eligibility */}
-                    <div>
-                      <h4 className="font-semibold text-lg mb-3 text-foreground">Required Documents</h4>
-                      <ul className="space-y-2">
-                        {insurance.eligibility.map((item, i) => (
-                          <li key={i} className="flex items-center text-sm text-muted-foreground">
-                            <span className="w-1.5 h-1.5 rounded-full bg-primary mr-3" />
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </CardContent>
-                </Card>
-              );
-            })}
+                      {/* Eligibility */}
+                      <div>
+                        <h4 className="font-semibold text-base mb-3 text-foreground">Required Documents</h4>
+                        <ul className="space-y-1.5">
+                          {insurance.eligibility.map((item, i) => (
+                            <li key={i} className="flex items-center text-xs text-muted-foreground">
+                              <span className="w-1.5 h-1.5 rounded-full bg-primary mr-2" />
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </CardContent>
+                  </Card>
+                );
+              })}
+            </div>
           </div>
 
           {/* CTA */}

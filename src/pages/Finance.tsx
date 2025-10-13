@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 import truckImage from "@/assets/truck-finance.jpg";
 import harvesterImage from "@/assets/harvester-finance.jpg";
 import carImage from "@/assets/car-finance.jpg";
-import financeBrands from "@/assets/finance-brands.jpg";
 
 const Finance = () => {
   const financeServices = [
@@ -177,50 +176,77 @@ const Finance = () => {
         </div>
       </section>
 
-      {/* Partner Brands */}
+      {/* Why Choose Us */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Our <span className="text-gradient">Finance Partners</span> - Top Lenders
+                Why Choose <span className="text-gradient">Sanjay Finance</span>
               </h2>
               <p className="text-lg text-muted-foreground">
-                Collaborating with India's leading banks and financial institutions for best loan rates
+                Your trusted partner for hassle-free vehicle and equipment financing
               </p>
             </div>
             
-            <div className="rounded-2xl overflow-hidden shadow-xl">
-              <img 
-                src={financeBrands} 
-                alt="Top finance company partners in India - Bajaj Finance, Tata Capital, HDFC Bank, ICICI Bank, and other leading vehicle loan providers"
-                className="w-full h-auto object-contain bg-white p-8"
-              />
-            </div>
-
-            <div className="grid md:grid-cols-4 gap-6 mt-12">
-              <Card>
-                <CardContent className="pt-6 text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">3000+</div>
-                  <p className="text-muted-foreground">Loans Approved</p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <Card className="border-2 hover-lift">
+                <CardContent className="pt-6">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-4">
+                    <CheckCircle className="w-7 h-7 text-primary-foreground" />
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground mb-2">Quick Approval</h3>
+                  <p className="text-muted-foreground">Get your loan approved within 24 hours with minimal documentation</p>
                 </CardContent>
               </Card>
-              <Card>
-                <CardContent className="pt-6 text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">24hrs</div>
-                  <p className="text-muted-foreground">Quick Approval</p>
+              
+              <Card className="border-2 hover-lift">
+                <CardContent className="pt-6">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-4">
+                    <Banknote className="w-7 h-7 text-primary-foreground" />
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground mb-2">Competitive Rates</h3>
+                  <p className="text-muted-foreground">Lowest interest rates in the market with flexible EMI options</p>
                 </CardContent>
               </Card>
-              <Card>
-                <CardContent className="pt-6 text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">90%</div>
-                  <p className="text-muted-foreground">Financing Available</p>
+              
+              <Card className="border-2 hover-lift">
+                <CardContent className="pt-6">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-4">
+                    <CheckCircle className="w-7 h-7 text-primary-foreground" />
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground mb-2">100% Transparency</h3>
+                  <p className="text-muted-foreground">No hidden charges, clear terms, and complete transparency in processing</p>
                 </CardContent>
               </Card>
-              <Card>
-                <CardContent className="pt-6 text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">35+</div>
-                  <p className="text-muted-foreground">Years Experience</p>
+              
+              <Card className="border-2 hover-lift">
+                <CardContent className="pt-6">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-4">
+                    <CheckCircle className="w-7 h-7 text-primary-foreground" />
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground mb-2">Expert Guidance</h3>
+                  <p className="text-muted-foreground">Dedicated relationship managers to guide you through the entire process</p>
+                </CardContent>
+              </Card>
+              
+              <Card className="border-2 hover-lift">
+                <CardContent className="pt-6">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-4">
+                    <CheckCircle className="w-7 h-7 text-primary-foreground" />
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground mb-2">Flexible Tenure</h3>
+                  <p className="text-muted-foreground">Choose repayment plans from 1 to 7 years that suit your budget</p>
+                </CardContent>
+              </Card>
+              
+              <Card className="border-2 hover-lift">
+                <CardContent className="pt-6">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-4">
+                    <CheckCircle className="w-7 h-7 text-primary-foreground" />
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground mb-2">35+ Years Trust</h3>
+                  <p className="text-muted-foreground">Three decades of excellence serving 3000+ happy customers</p>
                 </CardContent>
               </Card>
             </div>
