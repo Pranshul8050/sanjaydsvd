@@ -281,14 +281,14 @@ const Contact = () => {
               <CardContent className="p-0">
                 <div className="w-full h-96 bg-muted flex items-center justify-center">
                   <iframe
-                    src="https://www.google.com/maps?q=24.9600544,84.0049128&output=embed&z=15"
+                    src="https://www.google.com/maps?q=24.9600848,84.0048558&output=embed&z=17"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Sanjay Finance Location - Takiya Bazar, Sasaram, Bihar"
+                    title="Sanjay Finance Location - Patel Enterprises, Takiya Bazar, Sasaram, Bihar"
                   />
                 </div>
               </CardContent>
